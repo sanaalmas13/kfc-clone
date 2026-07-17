@@ -1,0 +1,132 @@
+.pickup-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.pickup-top{
+    width: 550px;
+    height:700px;
+    background: #f7f7f7;
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+    overflow: scroll;
+}
+    
+.kfc-stripes {
+  position: absolute;   
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  gap: 8px;
+}
+
+.kfc-stripes span {
+  width: 18px;
+  height: 24px;
+  background: var(--main-color);  
+}
+.pickup-top h3{
+   text-align: center;
+   margin-top: var(--space-1);
+}
+.close-btn2 {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: var(--main-color);
+  width: 40px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  color: #f7f7f7;
+  font-size: 20px;
+  cursor: pointer;
+  padding:0 5px;
+  
+}
+
+.pickup-top hr{
+    margin-top: var(--space-3);
+    width: 100%;
+}
+.search-box {
+  margin-top: 20px;
+}
+
+.search-box input {
+    
+  width: 100%;
+  height: 50px;
+  padding: 0 18px;
+  border: 1px solid #d9d9d9;
+  outline: none;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+.d-btn{
+  width: auto;
+  height: 30px;
+  border:none;
+  background-color: var(--main-color);
+  padding: 5px 5px;
+  color: #f7f7f7;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px){
+
+    .pickup-overlay{
+        padding: 15px;
+    }
+
+    .pickup-top{
+        width: 100%;
+        max-width: 550px;
+        height: 90vh;
+        padding: 20px;
+        overflow-y: auto;
+    }
+
+    .pickup-top h3{
+        font-size: 22px;
+        margin-top: 30px;
+    }
+
+    .close-btn2{
+        top: 15px;
+        right: 15px;
+        width: 35px;
+        height: 32px;
+        font-size: 18px;
+    }
+
+    .search-box input{
+        height: 45px;
+        font-size: 16px;
+    }
+
+}
+
+
+@media (max-width: 480px){
+
+    .pickup-top{
+        width: 95%;
+        height: 85vh;
+        padding: 15px;
+    }
+
+    .kfc-stripes span{
+        width: 14px;
+        height: 20px;
+    }
+
+}

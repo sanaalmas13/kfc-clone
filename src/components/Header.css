@@ -1,0 +1,231 @@
+.header{
+  height: 90px;
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+  color: inherit;
+  padding: var(--space-2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header-left{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.header-left img{
+  width: 30px;
+}
+.btn{
+  width: 130px;
+  height: 40px;
+  cursor: pointer;
+  background-color: var(--btn-bg);
+  border: 0px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+}
+.btn-1{
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  background-color: var(--btn-bg);
+  border: 2px solid  #e4002b;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.text{
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  width: 90px;
+  margin-left: var(--space-3);
+  margin-right: var(--space-2);
+}
+.header-right{
+  margin-left: auto;
+  margin-right: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+}
+.btn-4{
+   width: 80px;
+   height:40px;
+   background-color:var(--main-color);
+   color: white;
+   font-weight: 400;
+   font-size: 20px;
+   border-radius: 5px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  
+}
+
+.btn-3{
+  border: none;
+  background-color: #f7f7f7;
+   border-radius: 30px;
+
+  box-shadow: 0 10px 12px  rgba(0,0,0,0.25);
+}   
+.num{
+  font-weight: 500;
+}
+
+
+
+@media (max-width: 1024px){
+
+.header{
+    padding: 0 20px;
+}
+
+.logo img{
+    width: 70px;
+    margin-left: 20px;
+}
+
+.header-right{
+    margin-right: 20px;
+}
+
+.btn,
+.btn-1{
+    width: 100px;
+}
+
+.text{
+    font-size: 14px;
+}
+
+}
+
+
+
+
+@media (max-width: 768px){
+
+.header{
+    height: 75px;
+    padding: 0 10px;
+}
+
+
+/* logo */
+.logo img{
+    width: 55px;
+    margin-left: 10px;
+}
+
+
+/* delivery pickup merch text hide */
+.header-left .text{
+    display: none;
+}
+
+
+.header-left{
+    gap: 8px;
+}
+
+
+.btn,
+.btn-1{
+    width: 45px;
+    height: 40px;
+    padding: 0;
+}
+
+
+.header-left img{
+    width: 28px;
+}
+
+
+
+/* right */
+.header-right{
+    margin-right: 0;
+    gap: 10px;
+}
+
+
+.btn-4{
+    width: 65px;
+    height: 35px;
+    font-size: 14px;
+}
+
+
+.btn-3 svg{
+    font-size: 25px !important;
+}
+
+}
+
+
+
+
+
+@media (max-width:480px){
+
+.header{
+    height: 65px;
+}
+
+
+/* left buttons hide */
+.header-left{
+    display:none;
+}
+
+
+.logo img{
+    width:45px;
+}
+
+
+.btn-4{
+    width:60px;
+    font-size:12px;
+}
+
+
+.btn-3{
+    box-shadow:none;
+}
+
+
+}
+
+.logo svg{
+    font-size:50px;
+    margin-left:70px;
+}
+
+
+@media(max-width:768px){
+.logo svg{
+    font-size:40px;
+    margin-left:10px;
+}
+}
+
+
+@media(max-width:480px){
+.logo svg{
+    font-size:32px;
+}
+}

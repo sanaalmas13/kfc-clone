@@ -1,0 +1,13 @@
+.light{
+  background: #f7f7f7;
+  color: #000000;
+  min-height: 100vh;
+  transition: 0.3s;
+}
+.dark{
+  background: #121212;
+  color: #f7f7f7;
+  min-height: 100vh;
+  transition: 0.3s;
+}
+

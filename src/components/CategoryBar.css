@@ -1,0 +1,351 @@
+ .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: inherit;
+    color: inherit;
+    padding: 20px;
+    gap:20px;
+    overflow: visible;
+    padding-top: 80px;
+} 
+
+/* CATEGORY BUTTONS ROW */
+.button-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    position:sticky ;
+    top: 90px;
+    width: 100%;
+    z-index: 100;
+    background-color: var(--btn-bg);
+    padding: 15px 0;
+}
+
+.cat-btn{
+    width: auto;
+    background-color: inherit;
+    color: inherit;
+    height: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; 
+}  
+.main-row{
+    display: flex;
+    
+    align-items: flex-start;
+    width: 100%;
+   
+}
+.card{
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    
+}
+.bucket{
+    flex: 1;
+    min-width: 280px;
+    position: sticky;
+    top: 20px;
+    
+
+}
+.main-row{
+    width: 1380px;
+}
+.category-section{
+margin-bottom:40px;
+}
+
+.category-title{
+position:relative;
+display:inline-block;
+
+margin-bottom:30px;
+
+font-size:28px;
+font-weight:700;
+}
+
+.category-title::after{
+content:"";
+
+position:absolute;
+
+left:0;
+bottom:-10px;
+
+width:60px;
+height:5px;
+
+background:var(--main-color);
+
+border-radius:20px;
+}
+
+.cards-grid{
+display:flex;
+flex-wrap:wrap;
+gap:40px 20px;
+}
+.cat-btn.active {
+  background: var(--main-color);
+  color: white;
+  transform: scale(1.05);
+  border: none;
+}
+.category-section{
+  scroll-margin-top: 160px;
+}
+html {
+  scroll-behavior: smooth;
+}
+.modal{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:999;
+}
+
+.modal-content{
+    width:500px;
+    height:auto;
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    text-align:center;
+}
+
+.modal-content img{
+    width:250px;
+}
+
+.close-btn{
+    float:right;
+    cursor:pointer;
+    background-color: var(--main-color);
+    width:44px;
+    height:30px;
+    border: none;
+    border-radius: 5px;
+    color:#f7f7f7;
+    font-weight: 700;
+}
+
+.quantity{
+
+display:flex;
+justify-content:center;
+align-items:center;
+gap:15px;
+font-size: 20px;
+margin-bottom:15px;
+
+}
+
+.quantity button{
+
+height:42px;
+width:45px;
+border:2px solid var(--main-color);
+background:white;
+font-size:28px;
+border-radius:5px;
+}
+.quantity span{
+font-size:22px;
+}
+.modal-add-btn{
+    width: 100%;
+    height: 55px;
+    background-color: var(--main-color);
+    color: #f7f7f7;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 18px;
+    font-size:18px;
+    font-weight:bold;
+    border: none;
+    margin-bottom: 0;
+}
+
+/* ================= TABLET ================= */
+
+@media(max-width:1024px){
+
+.container{
+    padding:20px;
+    padding-top:70px;
+}
+
+
+.button-row{
+    top:75px;
+    gap:10px;
+}
+
+
+.cat-btn{
+    font-size:14px;
+    padding:8px 15px;
+}
+
+
+.main-row{
+    width:100%;
+    flex-direction:column;
+}
+
+
+.card{
+    width:100%;
+    justify-content:center;
+}
+
+
+.bucket{
+    width:100%;
+    position:relative;
+    top:auto;
+}
+
+
+
+.cards-grid{
+    justify-content:center;
+}
+
+}
+
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.container{
+    padding:10px;
+    padding-top:60px;
+}
+
+
+/* category horizontal scroll */
+.button-row{
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    justify-content:flex-start;
+    padding:10px;
+    gap:10px;
+}
+
+
+.button-row::-webkit-scrollbar{
+    display:none;
+}
+
+
+.cat-btn{
+    flex-shrink:0;
+    height:38px;
+    font-size:13px;
+    padding:8px 14px;
+}
+
+
+
+/* cards */
+.cards-grid{
+    gap:20px;
+    justify-content:center;
+}
+
+
+.card{
+    gap:15px;
+}
+
+
+
+/* bucket */
+.bucket{
+    width:100%;
+}
+
+
+
+/* modal */
+.modal-content{
+    width:90%;
+    padding:15px;
+}
+
+
+.modal-content img{
+    width:180px;
+}
+
+
+.modal-add-btn{
+    height:50px;
+    font-size:15px;
+}
+
+}
+
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media(max-width:480px){
+
+.category-title{
+    font-size:22px;
+}
+
+
+.cat-btn{
+    font-size:12px;
+}
+
+
+.quantity{
+    gap:10px;
+}
+
+
+.quantity button{
+    width:38px;
+    height:38px;
+    font-size:22px;
+}
+
+
+.modal-content img{
+    width:150px;
+}
+
+}

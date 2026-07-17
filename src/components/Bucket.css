@@ -1,0 +1,299 @@
+.bucket-container{
+    height: 800px;
+    background: #efefef;
+    padding-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+   
+    width: 600px;
+    position: sticky;
+    
+    
+} 
+
+/* HEADER */
+
+.b-header{
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 20px;
+
+    background: white;
+
+    border-bottom: 2px solid var(--main-color);
+}
+
+.item h2{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* RIGHT ICONS */
+
+.menu-icons{
+    display: flex;
+    gap: 10px;
+}
+
+.menu-icons span{
+    width: 14px;
+    height: 24px;
+
+    background: var(--main-color);
+    margin-bottom: 35px;
+    display: block;
+}
+
+/* CENTER AREA */
+
+.empty-state{
+     
+     margin: 18px;
+
+    background: #fefefe;
+
+    border-radius: 16px;
+
+    
+    
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+}
+
+.empty-state img{
+    width: 220px;
+    object-fit: contain;
+}
+
+.empty-state h3{
+    margin-top: 25px;
+     
+    font-size: 20px;
+    font-weight: 700;
+
+    max-width: 400px;
+}
+
+/* BOTTOM BAR */
+.bottom-wrapper{
+    background-color: #fefefe;
+    margin-top: auto;
+    
+    position: relative;
+    
+}
+
+.bottom {
+    width: 600px;
+    height: 100px;
+
+    background: linear-gradient(120deg, #e4002b, #ff0048);
+    color: #f7f7f7;
+
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 20px;
+
+    font-size: 22px;
+    font-weight: 700;
+
+    z-index: 999;  
+}
+
+   
+.fix-actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:16px
+}
+.bottom button{
+    background: transparent;
+
+    border: none;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    cursor: pointer;
+}
+.bottom button .MuiSvgIcon-root{
+    font-size: 20px;
+    color: black;
+    background: #f7f7f7;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+
+
+}
+
+.bucket-items{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 5px;
+}
+.del-btn{
+    font-size: 16px;
+    border: none;
+    font-weight:700 ;
+}
+/* ================= TABLET ================= */
+
+@media(max-width:1024px){
+
+.bucket-container{
+    width:100%;
+    height:650px;
+    margin-right:0;
+}
+
+
+.bottom{
+    width:100%;
+    height:85px;
+    font-size:18px;
+}
+
+
+.empty-state img{
+    width:180px;
+}
+
+}
+
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+.bucket-container{
+    width:100%;
+    height:550px;
+    position:relative;
+    margin:0;
+}
+
+
+.b-header{
+    height:55px;
+    padding:0 15px;
+}
+
+
+.item h2{
+    font-size:16px;
+}
+
+
+/* empty area */
+
+.empty-state{
+    margin:12px;
+    padding:20px 10px;
+}
+
+
+.empty-state img{
+    width:140px;
+}
+
+
+.empty-state h3{
+    font-size:16px;
+}
+
+
+/* bottom */
+
+.bottom-wrapper{
+    width:100%;
+}
+
+
+.bottom{
+    width:100%;
+    height:75px;
+    border-radius:15px;
+    padding:0 12px;
+    font-size:15px;
+}
+
+
+.bottom button{
+    font-size:14px;
+}
+
+
+.bottom button .MuiSvgIcon-root{
+    width:25px;
+    height:25px;
+    font-size:16px;
+}
+
+
+.bucket-items{
+    padding:0 12px;
+}
+
+}
+
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media(max-width:480px){
+
+.bucket-container{
+    height:500px;
+}
+
+
+.bottom{
+    height:70px;
+    font-size:13px;
+}
+
+
+.fix-actions{
+    gap:8px;
+}
+
+
+.bottom button{
+    font-size:12px;
+}
+
+
+.empty-state img{
+    width:120px;
+}
+
+}

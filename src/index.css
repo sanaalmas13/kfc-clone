@@ -1,0 +1,43 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+  background-color: #f7f7f7; 
+  color: #1c1c1c;
+  overflow-x: hidden;
+  line-height: 1.5;
+ 
+}
+
+:root{
+  --main-color :  #e4002b;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --space-1 : 10px;
+  --space-2 : 20px;
+  --space-3 : 30px;
+  --t-color : #000000;
+  
+  --btn-bg : #e4e9f0;
+
+}
+
+.light{
+  background: #f7f7f7;
+  color: #000000;
+  min-height: 100vh;
+  transition: 0.3s;
+}
+.dark{
+  background: #121212;
+  color: #564b4b;
+  min-height: 100vh;
+  transition: 0.3s;
+}
+
+
